@@ -17,12 +17,12 @@ export default function BookingPage() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="text-center mb-16"
+        className="text-center"
       >
         <main className="flex-grow relative z-10 mt-16">
-          <div className="container mx-auto px-4 py-8">
-          <div className="flex justify-center">
-            <h1 className="text-4xl font-bold mb-10">Reserva tu cita</h1>
+          <div className="container mx-auto px-4 py-10">
+            <div className="flex justify-center">
+            <h1 className="text-4xl font-bold mb-6">Reserva tu cita</h1>
           </div>
           <div className="max-w-2xl mx-auto">
             <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-100">

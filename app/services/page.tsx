@@ -22,6 +22,12 @@ const services = [
     title: "Tratamientos",
     description: "Tratamientos capilares para revitalizar tu cabello",
     price: "Desde 35€"
+  },
+  {
+    icon: <Sparkles className="w-8 h-8" />,
+    title: "Tratamientos",
+    description: "Tratamientos capilares para revitalizar tu cabello",
+    price: "Desde 35€"
   }
 ];
 
@@ -41,7 +47,7 @@ export default function ServicesPage() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
