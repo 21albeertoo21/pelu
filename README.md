@@ -1,3 +1,12 @@
 # pelu
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/21albeertoo21/pelu)
+Cosas que me quedan por implementar:
+
+(FrontEnd)
+Logo muy grande
+Background inicio en modo móvil que ocupe todo el v
+Menú más bonito
+Footer todo en una fila
+
+(Backend)
+todo

@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Calendar, Clock, Scissors, Star } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -45,10 +46,9 @@ export default function Home() {
             transition={{ delay: 0.4 }}
           >
             <Button size="lg" className="bg-white text-black hover:bg-gray-100">
-              Reservar ahora
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-              Ver servicios
+              <Link href="/booking" className="hover:text-gray-600">
+                Haz tu reserva
+              </Link>
             </Button>
           </motion.div>
         </div>
@@ -82,8 +82,16 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-black text-white py-20">
-        <div className="container mx-auto px-4 text-center">
+      <section className="relative bg-black text-white py-20">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80"
+            alt="Salon background"
+            fill
+            className="object-cover brightness-50"
+          />
+        </div>
+        <div className="container relative z-10 mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">
             Transforma tu imagen hoy
           </h2>
@@ -91,7 +99,9 @@ export default function Home() {
             Nuestro equipo de expertos está listo para ayudarte a lograr el look que siempre has soñado
           </p>
           <Button size="lg" className="bg-white text-black hover:bg-gray-100">
-            Reserva tu cita
+            <Link href="/booking" className="hover:text-gray-600">
+              Reserva tu cita
+            </Link>
           </Button>
         </div>
       </section>
